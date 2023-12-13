@@ -4,6 +4,7 @@ const skyisland = document.querySelector('.sky-island');
 const cloud = document.querySelector('.cloud');
 const lenflare = document.querySelector('.lenflare');
 const text = document.querySelector('.text-middle');
+const text2 = document.querySelector('.text-middle2');
 const btn = document.querySelector('.button');
 const h1content = document.querySelector('.h1-content');
 const pcontent = document.querySelectorAll('.p-content');
@@ -36,36 +37,57 @@ window.addEventListener("scroll", () => {
     }
 
     // button
-    if (scrollvalue < window.scrollY) {
-        btn.style.transform = `translate(-50%, ${window.scrollY}px)`;
+    // if (scrollvalue < window.scrollY) {
+    //     btn.style.transform = `translate(-50%, ${window.scrollY}px)`;
+    // }
+    // else {
+    //     btn.style.transform = `translate(-50%, ${window.scrollY}px)`;
+    // }
+
+    if(window.scrollY >= 250) {
+        btn.style.transform = `translate(-50%, -50%) scale(${0})`;
     }
     else {
-        btn.style.transform = `translate(-50%, ${window.scrollY}px)`;
+        btn.style.transform = `translate(-50%, -50%) scale(${1})`;
     }
 
-    // text
+    // text text2
     if (scrollvalue < window.scrollY) {
-        text.style.transform = `translate(${20 - window.scrollY / 3.5}%, -50%)`;
+        text.style.transform = `translate(-50%, ${-50 + window.scrollY / 2.5}%)`;
+        text2.style.transform = `translate(-50%, ${-50 + window.scrollY / 2}%)`;
     }
     else {
-        text.style.transform = `translate(${20 - window.scrollY / 3.5}%, -50%)`;
+        text.style.transform = `translate(-50%, ${-50 + window.scrollY / 2.5}%)`;
+        text2.style.transform = `translate(-50%, ${-50 + window.scrollY / 2}%)`;
     }
 
     // pop up text
-    if (window.scrollY >= 230) {
+    if (window.scrollY >= 250) {
         h1content.style.transform = 'scale(1)';
     }
     else {
         h1content.style.transform = 'scale(0)';
     }
 
-    for(let i = 0; i < pcontent.length; i++) {
-        if (window.scrollY >= 330) {
-            pcontent[i].style.transform = 'scale(1)';
-        }
-        else {
-            pcontent[i].style.transform = 'scale(0)';
-        }
+    if (window.scrollY >= 350) {
+        pcontent[0].style.transform = 'scale(1)';
+    }
+    else {
+        pcontent[0].style.transform = 'scale(0)';
+    }
+
+    if (window.scrollY >= 450) {
+        pcontent[1].style.transform = 'scale(1)';
+    }
+    else {
+        pcontent[1].style.transform = 'scale(0)';
+    }
+
+    if (window.scrollY >= 570) {
+        pcontent[2].style.transform = 'scale(1)';
+    }
+    else {
+        pcontent[2].style.transform = 'scale(0)';
     }
 
     console.log(window.scrollY);

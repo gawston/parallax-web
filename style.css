@@ -31,7 +31,8 @@ nav {
     /* background-color: #000000; */
     z-index: 999;
     color: white;
-    padding: 0 200px;
+    /* padding: 0 200px; */
+    padding: 0 10%;
 }
 
 nav a {
@@ -98,7 +99,7 @@ nav ul li:hover a {
     align-items: center;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     z-index: 300;
     text-decoration: none;
     width: 150px;
@@ -108,21 +109,14 @@ nav ul li:hover a {
     font-weight: 900;
     border-radius: 50px;
     border: 3px solid white;
+    transition: transform 0.4s ease-in-out;
 }
 
 .button:hover {
-    animation: btn 0.2s forwards;
+    background-color: white;
+    color: #000000;
 }
 
-@keyframes btn {
-    0% {
-        color: white;
-    }
-    100% {
-        color: #000000;
-        background-color: #ffffff;
-    }
-}
 
 .fade-color {
     position: absolute;
@@ -178,13 +172,27 @@ nav ul li:hover a {
 .text-middle {
     position: absolute;
     white-space: nowrap;
-    width: 100%;
-    top: 45%;
+    text-align: center;
+    top: 35%;
     left: 50%;
-    transform: translate(20%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 3;
     color: white;
-    font-size: 130px;
+    font-size: 125px;
+    font-weight: 800;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
+}
+
+.text-middle2 {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    font-size: 80px;
     font-weight: 800;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
 }
@@ -196,7 +204,7 @@ nav ul li:hover a {
     padding: 150px 150px;
 }
 
-.content h1 {
+.h1-content {
     display: inline-block;
     color: white;
     /* border: 1px solid red; */
@@ -207,10 +215,11 @@ nav ul li:hover a {
     transition: all 0.3s ease-in-out;
 }
 
-.content p {
+.p-content {
     color: white;
     font-size: 25px;
     transform: scale(0);
     transform-origin: center;
     transition: all 0.4s ease-in-out;
 }
+
