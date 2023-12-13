@@ -179,7 +179,7 @@ nav ul li:hover a {
     z-index: 3;
     color: white;
     font-size: 130px;
-    font-weight: 800;
+    font-weight: 900;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
 }
 
@@ -193,7 +193,7 @@ nav ul li:hover a {
     z-index: 3;
     color: white;
     font-size: 80px;
-    font-weight: 800;
+    font-weight: 900;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
 }
 
