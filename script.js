@@ -22,18 +22,18 @@ window.addEventListener("scroll", () => {
 
     // cloud
     if (scrollvalue < window.scrollY) {
-        cloud.style.transform = `translateY(${-window.scrollY}px)`;
+        cloud.style.transform = `translateY(${-window.scrollY / 2}px)`;
     }
     else {
-        cloud.style.transform = `translateY(${-window.scrollY}px)`;
+        cloud.style.transform = `translateY(${-window.scrollY / 2}px)`;
     }
 
     // lenflare
     if (scrollvalue < window.scrollY) {
-        lenflare.style.transform = `translateY(${-window.scrollY / 2}px)`;
+        lenflare.style.transform = `translateX(${-window.scrollY / 2}px)`;
     }
     else {
-        lenflare.style.transform = `translateY(${-window.scrollY / 2}px)`;
+        lenflare.style.transform = `translateX(${-window.scrollY / 2}px)`;
     }
 
     // button
@@ -44,6 +44,7 @@ window.addEventListener("scroll", () => {
     //     btn.style.transform = `translate(-50%, ${window.scrollY}px)`;
     // }
 
+    // button 
     if(window.scrollY >= 250) {
         btn.style.transform = `translate(-50%, -50%) scale(${0})`;
     }

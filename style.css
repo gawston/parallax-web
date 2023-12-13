@@ -178,7 +178,7 @@ nav ul li:hover a {
     transform: translate(-50%, -50%);
     z-index: 3;
     color: white;
-    font-size: 125px;
+    font-size: 130px;
     font-weight: 800;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
 }
