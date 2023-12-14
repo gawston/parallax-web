@@ -14,10 +14,10 @@ let scrollvalue = 0;
 window.addEventListener("scroll", () => {
     // sky island
     if (scrollvalue < window.scrollY) {
-        skyisland.style.transform = `translateY(${window.scrollY / 1.2}px)`;
+        skyisland.style.transform = `translateY(${window.scrollY / 2}px)`;
     }
     else {
-        skyisland.style.transform = `translateY(${window.scrollY / 1.2}px)`;
+        skyisland.style.transform = `translateY(${window.scrollY / 2}px)`;
     }
 
     // cloud
@@ -52,7 +52,7 @@ window.addEventListener("scroll", () => {
         btn.style.transform = `translate(-50%, -50%) scale(${1})`;
     }
 
-    // text text2
+    // text text2 go down
     if (scrollvalue < window.scrollY) {
         text.style.transform = `translate(-50%, ${-50 + window.scrollY / 2.5}%)`;
         text2.style.transform = `translate(-50%, ${-50 + window.scrollY / 2}%)`;
