@@ -91,6 +91,6 @@ window.addEventListener("scroll", () => {
         pcontent[2].style.transform = 'scale(0)';
     }
 
-    console.log(window.scrollY);
     scrollvalue = window.scrollY;
+    // console.log(window.scrollY);
 });

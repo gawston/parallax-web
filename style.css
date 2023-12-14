@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -109,7 +110,7 @@ nav ul li:hover a {
     font-weight: 900;
     border-radius: 50px;
     border: 3px solid white;
-    transition: transform 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .button:hover {
@@ -208,7 +209,7 @@ nav ul li:hover a {
     display: inline-block;
     color: white;
     /* border: 1px solid red; */
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 20px;
     transform: scale(0);
     transform-origin: center;
@@ -217,7 +218,7 @@ nav ul li:hover a {
 
 .p-content {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     transform: scale(0);
     transform-origin: center;
     transition: all 0.4s ease-in-out;
