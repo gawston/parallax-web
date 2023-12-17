@@ -100,7 +100,7 @@ window.addEventListener("scroll", () => {
 document.addEventListener("mousemove", function(event) {
     const x = event.clientX;
     const y = event.clientY;
-    cursor.style.transform = `translate(${x - 5 + window.screenX}px, ${y - 5 + window.scrollY}px)`;
+    cursor.style.transform = `translate(${x - 5 + window.scrollX}px, ${y - 5 + window.scrollY}px)`;
 });
 
 hoverable.forEach(hover => {
