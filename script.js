@@ -8,6 +8,8 @@ const text2 = document.querySelector('.text-middle2');
 const btn = document.querySelector('.button');
 const h1content = document.querySelector('.h1-content');
 const pcontent = document.querySelectorAll('.p-content');
+const cursor = document.querySelector('.custom-cursor');
+const hoverable = document.querySelectorAll('.hoverable');
 
 let scrollvalue = 0;
 
@@ -93,4 +95,19 @@ window.addEventListener("scroll", () => {
 
     scrollvalue = window.scrollY;
     // console.log(window.scrollY);
+});
+
+document.addEventListener("mousemove", function(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+    cursor.style.transform = `translate(${x - 5 + window.screenX}px, ${y - 5 + window.scrollY}px)`;
+});
+
+hoverable.forEach(hover => {
+    hover.addEventListener("mouseover", () => {
+        cursor.classList.add("hovered");
+    });
+    hover.addEventListener("mouseleave", () => {
+        cursor.classList.remove("hovered");
+    });
 });

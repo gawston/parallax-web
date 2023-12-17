@@ -6,6 +6,26 @@
     /* font-family: sans-serif; */
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease-out; 
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+.hovered {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
 }
 
 ::selection {
@@ -172,6 +192,7 @@ nav ul li:hover a {
 
 .text-middle {
     position: absolute;
+    width: 50%;
     white-space: nowrap;
     text-align: center;
     top: 35%;
@@ -186,6 +207,7 @@ nav ul li:hover a {
 
 .text-middle2 {
     position: absolute;
+    width: 50%;
     white-space: nowrap;
     text-align: center;
     top: 45%;
@@ -207,6 +229,8 @@ nav ul li:hover a {
 }
 
 .h1-content {
+    width: auto;
+    height: auto;
     display: inline-block;
     color: white;
     /* border: 1px solid red; */
@@ -215,6 +239,7 @@ nav ul li:hover a {
     transform: scale(0);
     transform-origin: center;
     transition: all 0.3s ease-in-out;
+    border: none;
 }
 
 .p-content {
@@ -224,4 +249,3 @@ nav ul li:hover a {
     transform-origin: center;
     transition: all 0.4s ease-in-out;
 }
-
